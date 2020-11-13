@@ -20,12 +20,12 @@ Simply Love is compatible with current releases from the official StepMania proj
 **Compatible Releases**<br>
 ✅ [StepMania 5.0.12](https://github.com/stepmania/stepmania/releases/tag/v5.0.12)<br>
 ✅ [StepMania 5.1-b2](https://github.com/stepmania/stepmania/releases/tag/v5.1.0-b2)<br>
+✅ [StepMania 5.3-a4.9.1 (OutFox)](https://projectmoon.dance/releases/5.3-a4.9.1) (preliminary support)<br>
 
 If you are able to compile StepMania's source code yourself, the [5_1-new branch](https://github.com/stepmania/stepmania/tree/5_1-new/) is supported.  The wiki has [instructions for compiling](https://github.com/stepmania/stepmania/wiki/Compiling-StepMania).
 
 
 **Incompatible**<br>
-❌ Alpha builds of SM5.3 are not supported at this time, but hopefully this will change in the future<br>
 ❌ Forks of SM5 (e.g. *starworlds*)<br>
 ❌ Older versions of StepMania (e.g. StepMania 3.9)<br>
 ❌ Forks of older versions of StepMania (e.g. OpenITG, NotITG)<br>
