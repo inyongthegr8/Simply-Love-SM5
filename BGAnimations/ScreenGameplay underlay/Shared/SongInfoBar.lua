@@ -15,13 +15,21 @@ return Def.ActorFrame{
 		Stream=Def.Quad({ InitCommand=function(self) self:zoomy(18):diffuse(GetCurrentColor(true)) end })
 	},
 
-	-- Song Title
+	-- Added Song Artist on top of Song Title - inyongthegr8
 	LoadFont("Common Normal")..{
 		Name="SongTitle",
 		InitCommand=function(self) self:zoom(0.8):shadowlength(0.6):maxwidth(_screen.w/2.5 - 10) end,
 		CurrentSongChangedMessageCommand=function(self)
 			local song = GAMESTATE:GetCurrentSong()
-			self:settext( song and song:GetDisplayFullTitle() or "" )
+			
+			local text = ""
+			local artist = song:GetDisplayArtist()
+			local title = song:GetDisplayFullTitle()
+			if song then
+				text = artist and song:GetDisplayArtist() .. " - " .. song:GetDisplayFullTitle() or song:GetDisplayFullTitle()
+			end
+
+			self:settext( text )
 		end
 	}
 }
