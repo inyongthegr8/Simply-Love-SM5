@@ -40,7 +40,7 @@ af[#af+1] = LoadFont("Wendy/_wendy monospace numbers")..{
 	OnCommand=function(self)
 		-- y offset for ScreenEvaluationStage or ScreenEvaluationNonstop
 		-- or anything else that inherits from ScreenEvaluation
-		self:y(_screen.h - 15)
+		self:y(_screen.h - 17)
 
 		-- use a slightly diffrent y offset for ScreenEvaluationSummary
 		local screen = SCREENMAN:GetTopScreen()
@@ -53,9 +53,6 @@ af[#af+1] = LoadFont("Wendy/_wendy monospace numbers")..{
 		local textColor = Color.White
 		if ThemePrefs.Get("RainbowMode") then
 			textColor = Color.Black
-		end
-		if ThemePrefs.Get("VisualStyle") == "SRPG5" then
-			textColor = color(SL.SRPG5.TextColor)
 		end
 
 		self:diffuse(textColor)
